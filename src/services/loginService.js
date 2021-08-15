@@ -1,13 +1,13 @@
 import axios from "axios";
 
-const headers = {
+/* const headers = {
     'Access-Control-Allow-Origin': '*',
     'X-Requested-With': 'XMLHttpRequest',
     'Access-Control-Allow-Headers': "Origin, X-Requested-With, Content-Type, Accept",
-}
+} */
 
 
-const proxyUrl = "https://cors-anywhere.herokuapp.com/";
+// const proxyUrl = "https://cors-anywhere.herokuapp.com/";
 export const loginUser = async ({ username, password }) => {
     if (username && password) {
         const responsePromise = new Promise((resolve, reject) => {
