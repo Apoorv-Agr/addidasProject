@@ -1,0 +1,36 @@
+.nav-bar-parent {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.nav-bar {
+  float: left;
+  border-right: 1px solid #bbb;
+}
+
+.logout-btn {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: black;
+  border: none;
+}
+.page-wrapper {
+  background-color: cornflowerblue;
+  color: #000;
+  width: 100%;
+  top: 43px;
+  bottom: 0;
+  position: absolute;
+  text-align: center;
+  padding-top: 25%;
+  font-size: 35px;
+}
+
+.text-background {
+  background: radial-gradient(#adadb3, transparent);
+}
