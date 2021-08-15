@@ -10,6 +10,7 @@ import { CONSTANTS_OBJ } from "../../constants/index";
 import InputComp from "../Input/InputComp";
 import PropTypes from "prop-types";
 import { loginUser } from "../../services/loginService";
+import ButtonComp from "../Button/ButtonComp";
 
 const LoginComp = ({ setToken }) => {
   const history = useHistory();
@@ -80,10 +81,19 @@ const LoginComp = ({ setToken }) => {
             {/* </label> */}
           </div>
           <div style={{ textAlign: "right" }}>
-            <button type="submit" className="sign-in">
+            <ButtonComp
+              buttonType="submit"
+              className="sign-in"
+              buttonClick={() => {}}
+              buttonName={CONSTANTS_OBJ.loginBtnText}
+            >
+              <span className="login-btn-arrow">&#8594;</span>
+            </ButtonComp>
+
+            {/* <button type="submit" className="sign-in">
               {CONSTANTS_OBJ.loginBtnText}
               <span className="login-btn-arrow">&#8594;</span>
-            </button>
+            </button> */}
           </div>
         </form>
       </div>

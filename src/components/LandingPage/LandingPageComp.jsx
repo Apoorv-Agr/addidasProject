@@ -3,6 +3,7 @@ import jwt_decode from "jwt-decode";
 import { useHistory } from "react-router-dom";
 
 import "./LandingPageStyle.css";
+import ButtonComp from "../Button/ButtonComp";
 
 const LandingPageComp = (props) => {
   const history = useHistory();
@@ -16,13 +17,13 @@ const LandingPageComp = (props) => {
     <div>
       <div className="nav-bar-parent">
         <div className="nav-bar" style={{ float: "right" }}>
-          <button
-            style={{ cursor: "pointer" }}
+            <ButtonComp className="logout-btn" buttonType="button" buttonName="LogOut" buttonClick={logOut}/>
+          {/* <button
             className="logout-btn"
             onClick={logOut}
           >
             LogOut
-          </button>
+          </button> */}
         </div>
       </div>
       <div className="page-wrapper">

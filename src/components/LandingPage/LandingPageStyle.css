@@ -18,6 +18,7 @@
   text-decoration: none;
   background-color: black;
   border: none;
+  cursor: pointer;
 }
 .page-wrapper {
   background-color: cornflowerblue;
