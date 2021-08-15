@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-function InputComp(props) {
+const InputComp = (props) => {
   const { inputType, disabled, checked, onChange } = props;
   return (
     <>
