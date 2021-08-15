@@ -31,10 +31,8 @@ const LoginComp = ({ setToken }) => {
       username,
       password,
     });
-    console.log("token : ", token);
     if (token) {
       setToken(token);
-      console.log("history : ", history);
       history.push("/landingPage");
     }
   };
