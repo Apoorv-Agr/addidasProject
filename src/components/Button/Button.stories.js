@@ -6,14 +6,15 @@ export default {
     component: ButtonComp,
     argTypes: {
         backgroundColor: { control: 'color' },
-        className: { control: 'select' }
+        className: { control: 'select' },
+        buttonType: { control: 'select' }
     },
 }
 
 const Template = (args) => <ButtonComp {...args} />;
 export const LoginButton = Template.bind({});
 LoginButton.args = {
-    inputType: "submit",
+    buttonType: "submit",
     className: "sign-in",
     buttonClick: () => { return },
     buttonName: "LOG IN",

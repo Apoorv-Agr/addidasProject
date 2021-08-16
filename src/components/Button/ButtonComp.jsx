@@ -33,7 +33,7 @@ ButtonComp.defaultProps = {
 
 ButtonComp.propTypes = {
   backgroundColor: PropTypes.string,
-  buttonType: PropTypes.string,
+  buttonType: PropTypes.oneOf(["button", "submit"]),
   buttonClick: PropTypes.func,
   buttonName: PropTypes.string.isRequired,
   className: PropTypes.oneOf(["sign-in", "logout-btn"]),
