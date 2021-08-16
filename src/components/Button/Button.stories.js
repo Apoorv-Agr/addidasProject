@@ -13,7 +13,7 @@ export default {
 const Template = (args) => <ButtonComp {...args} />;
 export const LoginButton = Template.bind({});
 LoginButton.args = {
-    buttonType: "submit",
+    inputType: "submit",
     className: "sign-in",
     buttonClick: () => { return },
     buttonName: "LOG IN",

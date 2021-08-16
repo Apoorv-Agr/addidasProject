@@ -1,0 +1,24 @@
+.form-group input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  /* display: none; */
+  cursor: pointer;
+}
+
+.form-group input:checked + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 7px;
+  width: 6px;
+  height: 14px;
+  border: 2px solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+input[type="checkbox"]:checked {
+  background-color: black;
+}
