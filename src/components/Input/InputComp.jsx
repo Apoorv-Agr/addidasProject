@@ -5,7 +5,7 @@ import "./InputCompStyle.css";
 const InputComp = (props) => {
   const { inputType, disabled, checked, onChange, className } = props;
   return (
-    <div className="form-group">
+    <>
       <input
         className={className}
         type={inputType}
@@ -14,7 +14,7 @@ const InputComp = (props) => {
         onChange={onChange}
         autoComplete="false"
       />
-    </div>
+    </>
   );
 };
 InputComp.defaultProps = {
