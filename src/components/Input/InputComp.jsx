@@ -10,10 +10,11 @@ const InputComp = (props) => {
         readOnly={disabled}
         checked={checked}
         onChange={onChange}
+        autoComplete="false"
       />
     </>
   );
-}
+};
 InputComp.defaultProps = {
   inputType: "text",
   disabled: false,

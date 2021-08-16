@@ -1,6 +1,22 @@
-.default-cls{
-    background-color: #41b2fd;
-    color: #fff;
-    padding: 5px;
-    cursor: pointer;
+.default-cls {
+  background-color: #41b2fd;
+  color: #fff;
+  padding: 5px;
+  cursor: pointer;
+}
+.sign-in {
+  background-color: #000;
+  color: #fff !important;
+  padding: 5px;
+  cursor: pointer;
+}
+.logout-btn {
+  display: block;
+  color: white !important;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: black;
+  border: none;
+  cursor: pointer;
 }
